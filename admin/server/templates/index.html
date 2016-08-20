@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
     <title><%= title %></title>
-    <link rel="stylesheet" href="<%= codemirrorPath %>/codemirror.css">
     <link rel="stylesheet" href="<%= adminPath %>/styles/keystone.min.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   </head>
@@ -26,9 +25,6 @@
     <script src="<%= adminPath %>/js/lib/cloudinary/jquery.cloudinary.js"></script>
     <%- cloudinaryScript %>
 <% } } -%>
-<% if (fieldTypes.code) { -%>
-    <script src="<%= codemirrorPath %>/codemirror-compressed.js"></script>
-<% } -%>
     <script src="<%= adminPath %>/js/common.js"></script>
     <script src="<%= adminPath %>/js/admin.js"></script>
 <% if (env === 'production' && ga.property && ga.domain) { -%>

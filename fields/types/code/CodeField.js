@@ -10,6 +10,7 @@ import classnames from 'classnames';
  * TODO:
  * - Remove dependency on underscore
  */
+import 'codemirror/lib/codemirror.css';
 
 // See CodeMirror docs for API:
 // http://codemirror.net/doc/manual.html
