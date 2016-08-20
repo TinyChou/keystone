@@ -1,8 +1,9 @@
 import _ from 'lodash';
 import Field from '../Field';
 import React from 'react';
-import tinymce from 'tinymce';
 import { FormInput } from 'elemental';
+
+let tinymce;
 
 /**
  * TODO:
@@ -40,6 +41,8 @@ module.exports = Field.create({
 
 	initWysiwyg () {
 		if (!this.props.wysiwyg) return;
+		// We only have it in the browser if we have wysiwyg
+		tinymce = require('tinymce');
 
 		var self = this;
 		var opts = this.getOptions();
