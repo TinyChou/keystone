@@ -5,7 +5,7 @@ module.exports = function CodeType(config) {
 		selector: '.field-type-code[for="' + config.fieldName + '"]',
 		elements: {
 			label: '.FormLabel',
-			lineNumber: '.CodeMirror-linenumber',
+			lineNumber: '.CodeMirror-gutter-wrapper > .CodeMirror-linenumber',
 			codeMirror: '.CodeMirror-container',
 		},
 		commands: [{
