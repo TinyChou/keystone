@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { Columns } from 'FieldTypes';
+import { Columns } from '../../../../../../fields';
 import { Alert, Spinner } from 'elemental';
 
 const RelatedItemsList = React.createClass({
